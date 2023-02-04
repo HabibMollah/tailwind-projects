@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Survey Form</title>
+  </head>
+  <body class="">
+    <h1 class="text-center my-6 text-3xl font-bold">
+      freeCodeCamp Survey Form
+    </h1>
+    <p class="text-center mx-2 my-4">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="get">
+      <label class="py-2 px-4" for="name"
+        >Name<input
+          class="border-solid pt-4 border-2 border-gray-500 block mx-auto w-11/12 h-14 text-xl px-2 rounded-md"
+          id="name"
+          type="text"
+      /></label>
+      <label class="py-2 px-1 pt-4" for="email"
+        >Email<input
+          class="border-solid border-2 border-gray-500 block mx-auto w-11/12 h-14 text-xl px-2 rounded-md"
+          id="email"
+          type="email"
+      /></label>
+      <label class="px-4" for="age"
+        >Age (optional)<input
+          class="border-solid border-2 border-gray-500 block mx-auto w-11/12 h-14 text-xl px-2 rounded-md"
+          id="age"
+          type="number"
+      /></label>
+      <label for="role" class=""
+        ><p class="px-4 pt-2">Which option best describes your current role?</p>
+
+        <select class="w-10/12 px-2 mx-4" name="role" id="role">
+          <option value="" disabled selected>select your role</option>
+          <option value="">Student</option>
+          <option value="">Full time job</option>
+          <option value="">Full time learner</option>
+          <option value="">Prefer not to say</option>
+          <option value="">Other</option>
+        </select>
+      </label>
+
+      <p class="px-4 pt-4">Would you recommend freeCodeCamp to a friend?</p>
+      <label for="Definitely" class="px-4">
+        <input type="radio" name="radio" value="Definitely" id="Definitely" />
+        Definitely</label
+      >
+      <label for="Maybe" class="px-4"
+        ><input
+          type="radio"
+          name="radio"
+          value="Maybe"
+          id="Maybe"
+        />Maybe</label
+      >
+      <label for="Not" class="px-4">
+        <input type="radio" name="radio" value="Not" id="" />Not sure</label
+      >
+      <label for="favFeature" class="block px-4">
+        <p class="pt-4">What is your favorite feature of freeCodeCamp?</p>
+        <select name="favFeature" id="favFeature" class="w-11/12">
+          <option value="" disabled selected>Select an option</option>
+          <option value="">Projects</option>
+          <option value="">Challanges</option>
+          <option value="">Community</option>
+          <option value="">Open source</option>
+        </select>
+      </label>
+      <p class="px-4 pt-4">
+        What would you like to see improved? (Check all that apply)
+      </p>
+      <div class="flex flex-col">
+        <label for="Front-end">
+          <input
+            class="ml-4"
+            id="Front-end"
+            type="checkbox"
+            value="Front-end"
+          />
+          Front-end support
+        </label>
+        <label for=""
+          ><input class="ml-4" type="checkbox" value="Back-end" />Back-end
+          support</label
+        ><label for=""
+          ><input class="ml-4" type="checkbox" value="Data-visualization" />Data
+          visualization </label
+        ><label for=""
+          ><input
+            class="ml-4"
+            type="checkbox"
+            value="Challanges"
+          />Challanges</label
+        ><label for=""
+          ><input class="ml-4" type="checkbox" value="Oss-community" />OSS
+          Community</label
+        ><label for=""
+          ><input class="ml-4" type="checkbox" value="Glitter-help" />Glitter
+          help room</label
+        ><label for=""
+          ><input class="ml-4" type="checkbox" value="Videos" />Videos</label
+        ><label for=""
+          ><input class="ml-4" type="checkbox" value="City-meetups" />City
+          meetups </label
+        ><label for=""
+          ><input class="ml-4" type="checkbox" value="Wiki" />Wiki</label
+        ><label for=""
+          ><input class="ml-4" type="checkbox" value="Forum" />Forum</label
+        ><label for=""
+          ><input
+            class="ml-4"
+            type="checkbox"
+            value="Additional-courses"
+          />Additional courses</label
+        >
+      </div>
+      <label for="comment">
+        <p class="px-4 pt-4">Any comments or suggestions?</p>
+        <textarea
+          class="border-2 border-gray-500 w-11/12 rounded-lg mx-auto block"
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </label>
+      <button
+        type="submit"
+        class="bg-green-600 w-11/12 h-10 rounded mx-auto block my-3 text-white font-semibold"
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
